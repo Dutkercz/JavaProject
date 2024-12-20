@@ -29,18 +29,18 @@ public class Product {
         this.productQuantity = productQuantity;
     }
 
-    public double somaProduto() {
+    public double sumProduct() {
         return productQuantity*productPrice;
     }
 
-    public void increaseProduto(int items){
+    public void increaseProduct(int items){
         setProductQuantity(getProductQuantity() + items);
-        somaProduto();
+        sumProduct();
 
     }
     public void decreaseProduto(int itens){
         setProductQuantity(getProductQuantity() - itens);
-        somaProduto();
+        sumProduct();
 
     }
 
@@ -49,6 +49,6 @@ public class Product {
     public String toString() {
         return "\tProduct:" + productName +"\n\tQuantity: "+productQuantity+
                 "\n\tUnits: " + productQuantity +
-                "\n\tTotal: US$ "+ somaProduto();
+                "\n\tTotal: US$ "+ sumProduct();
     }
 }

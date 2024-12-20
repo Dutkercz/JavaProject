@@ -52,7 +52,7 @@ public class Stock {
                 System.out.println("How many items you want add: ");
                 var itemsToAdd = scan.nextInt();
 
-                product1.increaseProduto(itemsToAdd);
+                product1.increaseProduct(itemsToAdd);
                 //product1.somaProduto();
                 System.out.println();
                 System.out.println("Stock updated");
