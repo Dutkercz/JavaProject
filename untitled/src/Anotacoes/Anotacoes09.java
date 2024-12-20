@@ -13,7 +13,6 @@ public class Anotacoes09 {
         System.out.println("ToUpperCase ="+nome2+"=");
         String nome3 = nome.trim();
         System.out.println("trim()"+nome3+"=");
-        String nome4 = 
 
     }
 }
