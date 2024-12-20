@@ -25,29 +25,29 @@ public class Product {
         return productQuantity;
     }
 
-    public int setProductQuantity(int productQuantity) {
+    public void setProductQuantity(int productQuantity) {
         this.productQuantity = productQuantity;
-        return productQuantity;
     }
 
     public double somaProduto() {
         return productQuantity*productPrice;
     }
-    public int increaseProduto(int itens){
-        int aux = setProductQuantity(getProductQuantity() + itens);
+    public void increaseProduto(int itens){
+        setProductQuantity(getProductQuantity() + itens);
         somaProduto();
-        return aux;
+
     }
-    public int decreaseProduto(int itens){
-        int aux = setProductQuantity(getProductQuantity() - itens);
+    public void decreaseProduto(int itens){
+        setProductQuantity(getProductQuantity() - itens);
         somaProduto();
-        return aux;
+
     }
 
 
     @Override
     public String toString() {
-        return "O produto " + productName +", tem "+productQuantity+" unidades," +
-                "no total de R$ "+ somaProduto();
+        return "\tProduct:" + productName +"\n\tQuantity: "+productQuantity+
+                "\n\tUnits: " + productQuantity +
+                "\n\tTotal: US$ "+ somaProduto();
     }
 }

@@ -1,9 +1,11 @@
 package AplicationOne;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Stock {
     public static void main(String[] args) {
+        Locale.setDefault(Locale.US);
 
         Scanner scan = new Scanner(System.in);
         Product product1 = new Product();
@@ -58,7 +60,7 @@ public class Stock {
                 System.out.println();
 
             }
-            else if (choice == 3) {System.out.println("Check stock: "+product1);}
+            else if (choice == 3) {System.out.println("\t\t=== Check stock ===\n"+product1);}
 
             else if (choice == 4) {
                 scan.close();
