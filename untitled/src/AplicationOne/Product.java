@@ -1,15 +1,9 @@
 package AplicationOne;
 
 public class Product {
-    private String productName;
+    public String productName;
     private double productPrice;
     private int productQuantity;
-
-    public Product(String productName, double productPrice, int productQuantity) {
-        this.productName = productName;
-        this.productPrice = productPrice;
-        this.productQuantity = productQuantity;
-    }
 
     public String getProductName() {
         return productName;
@@ -31,13 +25,25 @@ public class Product {
         return productQuantity;
     }
 
-    public void setProductQuantity(int productQuantity) {
+    public int setProductQuantity(int productQuantity) {
         this.productQuantity = productQuantity;
+        return productQuantity;
     }
 
     public double somaProduto() {
         return productQuantity*productPrice;
     }
+    public int increaseProduto(int itens){
+        int aux = setProductQuantity(getProductQuantity() + itens);
+        somaProduto();
+        return aux;
+    }
+    public int decreaseProduto(int itens){
+        int aux = setProductQuantity(getProductQuantity() - itens);
+        somaProduto();
+        return aux;
+    }
+
 
     @Override
     public String toString() {
