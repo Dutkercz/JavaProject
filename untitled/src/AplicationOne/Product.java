@@ -32,8 +32,9 @@ public class Product {
     public double somaProduto() {
         return productQuantity*productPrice;
     }
-    public void increaseProduto(int itens){
-        setProductQuantity(getProductQuantity() + itens);
+
+    public void increaseProduto(int items){
+        setProductQuantity(getProductQuantity() + items);
         somaProduto();
 
     }
