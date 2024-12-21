@@ -1,8 +1,6 @@
 package Anotacoes;
 
-import java.util.Locale;
-
-public class Anotacoes09 {
+public class Anotacao10 {
     public static void main(String[] args) {
 
         String nome = "         crISTian tiaGO rOsa    ";

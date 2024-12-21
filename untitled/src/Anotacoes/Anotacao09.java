@@ -1,6 +1,6 @@
 package Anotacoes;
 
-public class Anotacoes08 {
+public class Anotacao09 {
     public static void main(String[] args) {
 
         //OPERAÇÕES BIT A BIT

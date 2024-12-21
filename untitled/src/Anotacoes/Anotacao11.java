@@ -1,6 +1,6 @@
 package Anotacoes;
 
-public class anotacoes10 {
+public class Anotacao11 {
     public static void main(String[] args) {
 
         /*Recortando String

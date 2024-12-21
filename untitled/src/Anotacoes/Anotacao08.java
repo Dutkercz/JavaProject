@@ -2,7 +2,7 @@ package Anotacoes;
 
 import java.util.Scanner;
 
-public class Anotacoes07 {
+public class Anotacao08 {
     public static void main(String[] args) {
 
         //Estrutura de repetição FOR.

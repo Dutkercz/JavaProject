@@ -2,7 +2,7 @@ package Anotacoes;
 
 import java.util.Locale;
 import java.util.Scanner;
-public class Anotacoes06 {
+public class Anotacao07 {
     public static void main(String[] args) {
 
         // USANDO O DEBUG NESSE CODIGO.
