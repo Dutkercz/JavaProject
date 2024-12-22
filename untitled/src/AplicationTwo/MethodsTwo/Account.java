@@ -7,7 +7,7 @@ public class Account {
     private String titularName;
     private int accountNumber;
     private double depositAccout;
-    protected double balanceAccount;
+    private double balanceAccount;
 
 
     //Constructors
@@ -50,8 +50,9 @@ public class Account {
         this.titularName = titularName;
     }
 
+    //Methods
     public void withdraw (double value) {
-        balanceAccount = getBalanceAccount() - value - tax;
+        balanceAccount -= value - tax;
     }
 
     @Override

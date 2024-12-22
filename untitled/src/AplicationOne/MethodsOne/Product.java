@@ -1,7 +1,7 @@
-package AplicationOne;
+package AplicationOne.MethodsOne;
 
 public class Product {
-    public String productName;
+    private String productName;
     private double productPrice;
     private int productQuantity;
 

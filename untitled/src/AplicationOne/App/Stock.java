@@ -1,4 +1,6 @@
-package AplicationOne;
+package AplicationOne.App;
+
+import AplicationOne.MethodsOne.Product;
 
 import java.util.Scanner;
 
@@ -12,7 +14,7 @@ public class Stock {
         System.out.println();
 
         System.out.print("\tProduct name: ");
-        product1.productName = scan.nextLine();
+        product1.setProductName(scan.nextLine());
 
         System.out.print("\tPrice: ");
         product1.setProductPrice(scan.nextDouble());

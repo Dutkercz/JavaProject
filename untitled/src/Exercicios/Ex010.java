@@ -2,7 +2,7 @@ package Exercicios;
 
 import java.util.Scanner;
 
-public class Ex08 {
+public class Ex010 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int soma = 0;
