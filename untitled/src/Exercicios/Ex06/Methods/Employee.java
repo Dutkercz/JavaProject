@@ -12,10 +12,6 @@ public class Employee {
         this.id = id;
     }
 
-    public void increaseSalary(Employee id) {
-        salary = id.salary *1.1;
-    }
-
     public String getName() {
         return name;
     }
@@ -36,10 +32,18 @@ public class Employee {
         return id;
     }
 
+    public void increaseSalary(double percentageIncrease) {
+        salary = salary * (1+(percentageIncrease/100));
+    }
+
+
+
     @Override
     public String toString() {
         return "( Employee: "+ name +", Salary: "+ salary +", Id: "+ id +" )\n";
 
 
     }
+
+
 }

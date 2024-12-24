@@ -36,10 +36,22 @@ public class Program {
             employeeList.add(employee);
         }
         System.out.println(employeeList);
-        for (Employee id : employeeList){
-            if (id.getId() == 1092);
-                Employee.increaseSalary(id);
+        System.out.println("Enter Id of employee to increse salary");
+        int idEmployee = scan.nextInt();
+
+        for (int i = 0; i < employeeList.size(); i++) {
+
+            if (employeeList.get(i).getId() == idEmployee){
+                System.out.println("How much salary will be increased: ");
+                double percentageIncrease = scan.nextDouble();
+                employeeList.get(i).increaseSalary(percentageIncrease);
+
+                System.out.println(employeeList.get(i));
+            }else {
+                System.out.println("Id not found.");
+            }
         }
+        System.out.println(employeeList);
 
     }
 }
