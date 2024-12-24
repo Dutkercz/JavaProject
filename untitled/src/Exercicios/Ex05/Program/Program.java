@@ -15,7 +15,7 @@ public class Program {
         System.out.println("Quantos estudantes deseja registrar:");
         int numeroDeEstudantes = scan.nextInt();
 
-        Methods[] cadastroDeEstudante = new Methods[9];
+        Methods[] cadastroDeEstudante = new Methods[10];
 
         for (int i = 0; i < numeroDeEstudantes; i++) {
             scan.nextLine();
@@ -27,7 +27,7 @@ public class Program {
             int aptoEscolhido = scan.nextInt();
             cadastroDeEstudante[aptoEscolhido] = new Methods(nome, email, aptoEscolhido);
         }
-        for (int i = 1; i <= 10; i++) {
+        for (int i = 0; i < cadastroDeEstudante.length; i++) {
             if (cadastroDeEstudante[i] != null) {
                 System.out.println(cadastroDeEstudante[i]);
             }else {

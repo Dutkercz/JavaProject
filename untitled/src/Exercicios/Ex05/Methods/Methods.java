@@ -40,7 +40,7 @@ public class Methods {
     @Override
     public String toString() {
         return "\nApartamento: " + apto +
-                "\n E-mail: " + email+
-                "\n Nome: " + name;
+                "\n Name: " + name+
+                "\n e-mail: " + email;
     }
 }
