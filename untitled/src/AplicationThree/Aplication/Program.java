@@ -26,11 +26,11 @@ public class Program {
         System.out.print("Nome do Departamento: ");
         Department departmentName = new Department(scan.nextLine());
         System.out.println();
-        System.out.println("\t<<< Enter woker data >>>");
+        System.out.println("\t<<< Enter worker data >>>");
 
         System.out.print("Name: ");
         String name = scan.nextLine();
-        System.out.print("Level: ");
+        System.out.print("Level: Junior / Pleno / Sênior  >>");
         WorkerLevel workerLevel = WorkerLevel.valueOf(scan.nextLine().toUpperCase());
         System.out.print("Base Salary ");
         double baseSalary = scan.nextDouble();
