@@ -1,6 +1,6 @@
-package AplicationTwo.ProgramTwo;
+package ApplicationTwo.ProgramTwo;
 
-import AplicationTwo.MethodsTwo.Account;
+import ApplicationTwo.MethodsTwo.Account;
 
 import java.util.Locale;
 import java.util.Scanner;

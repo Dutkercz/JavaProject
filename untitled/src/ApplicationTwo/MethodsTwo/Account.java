@@ -1,4 +1,4 @@
-package AplicationTwo.MethodsTwo;
+package ApplicationTwo.MethodsTwo;
 
 public class Account {
 

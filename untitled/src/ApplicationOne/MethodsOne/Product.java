@@ -1,4 +1,4 @@
-package AplicationOne.MethodsOne;
+package ApplicationOne.MethodsOne;
 
 public class Product {
     private String productName;

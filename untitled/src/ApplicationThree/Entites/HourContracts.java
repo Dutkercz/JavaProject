@@ -1,4 +1,4 @@
-package AplicationThree.Entites;
+package ApplicationThree.Entites;
 
 import java.util.Date;
 

@@ -1,4 +1,4 @@
-package AplicationFour;
+package ApplicationFour.Orders;
 
 public enum OrderStatus {
     PENDING_PAYMENT,

@@ -1,6 +1,6 @@
-package AplicationOne.App;
+package ApplicationOne.App;
 
-import AplicationOne.MethodsOne.Product;
+import ApplicationOne.MethodsOne.Product;
 
 import java.util.Scanner;
 

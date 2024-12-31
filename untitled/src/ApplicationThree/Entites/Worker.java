@@ -1,9 +1,7 @@
-package AplicationThree.Entites;
+package ApplicationThree.Entites;
 
-import AplicationThree.Enum.WorkerLevel;
+import ApplicationThree.Enum.WorkerLevel;
 
-import java.time.Year;
-import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;

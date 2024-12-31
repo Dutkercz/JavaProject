@@ -1,4 +1,4 @@
-package AplicationThree.Entites;
+package ApplicationThree.Entites;
 
 public class Department {
     private String departamentName;

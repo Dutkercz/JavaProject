@@ -1,15 +1,12 @@
-package AplicationThree.Aplication;
+package ApplicationThree.Aplication;
 
-import AplicationThree.Entites.Department;
-import AplicationThree.Entites.HourContracts;
-import AplicationThree.Entites.Worker;
-import AplicationThree.Enum.WorkerLevel;
+import ApplicationThree.Entites.Department;
+import ApplicationThree.Entites.HourContracts;
+import ApplicationThree.Entites.Worker;
+import ApplicationThree.Enum.WorkerLevel;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.Locale;
 import java.util.Scanner;
