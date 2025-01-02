@@ -1,6 +1,5 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+package Exercicios;
+
 import java.util.Scanner;
 
 public class Ex12 {
