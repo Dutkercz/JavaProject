@@ -1,8 +1,8 @@
 package ApplicationFive.Entities;
 
 public class Product {
-    private String name;
-    private Double price;
+    protected String name;
+    protected Double price;
 
     public Product() {
     }
@@ -30,6 +30,6 @@ public class Product {
 
     public String priceTag (){
         return "Name: " + name +
-                "Price: " + price;
+                " - Price: " + price;
     }
 }

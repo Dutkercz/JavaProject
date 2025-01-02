@@ -1,5 +1,6 @@
 package ApplicationFive.Program;
 
+import ApplicationFive.Entities.ImportedProduct;
 import ApplicationFive.Entities.Product;
 import ApplicationFive.Entities.UsedProduct;
 
@@ -23,25 +24,38 @@ public class ProgramFive {
         int numberOfProducts = scan.nextInt();
         for (int i = 1; i <= numberOfProducts; i++) {
             System.out.println("\nProduct #" + i + " data\n");
-            System.out.println("Product classification:" +
+            System.out.print("Product classification:" +
                     "\n   1 - Common" +
                     "\n   2 - Used" +
-                    "\n   3 - Imported");
+                    "\n   3 - Imported"+
+                    "\n   >>   ");
             int choice = scan.nextInt();
             scan.nextLine();
+
             System.out.println("Product name: ");
             String name = scan.nextLine();
             System.out.println("Product price: ");
             double productPrice = scan.nextDouble();
-            scan.nextLine();
+
+
             if (choice == 1){
                 productList.add(new Product(name, productPrice));
             } else if (choice == 2) {
+                scan.nextLine();
                 System.out.println("Manufacture date: ");
                 String date = scan.nextLine();
                 productList.add(new UsedProduct( name, productPrice, sdf.parse(date)));
+            } else if (choice == 3) {
+                System.out.println("Customs fee: ");
+                double customsFee = scan.nextDouble();
+
+                productList.add((new ImportedProduct(name, productPrice, customsFee)));
             }
 
+        }
+        System.out.println("Price TAGS.\n");
+        for (Product c : productList){
+            System.out.println(c.priceTag());
         }
     }
 }
