@@ -1,4 +1,4 @@
-package Model2;
+package Model2.Services;
 
 public class BrasilTaxService implements TaxService {
 

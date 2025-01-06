@@ -1,4 +1,4 @@
-package Model2;
+package Model2.Entities;
 
 import java.time.LocalDateTime;
 
@@ -8,13 +8,13 @@ public class CarRental {
     private LocalDateTime start;
     private LocalDateTime finish;
 
-    private Model2.Vehicle vehicle;
-    private Model2.Invoice invoice;
+    private Vehicle vehicle;
+    private Invoice invoice;
 
     public CarRental() {
     }
 
-    public CarRental(LocalDateTime start, LocalDateTime finish, Model2.Vehicle vehicle) {
+    public CarRental(LocalDateTime start, LocalDateTime finish, Vehicle vehicle) {
         this.start = start;
         this.finish = finish;
         this.vehicle = vehicle;
@@ -36,19 +36,19 @@ public class CarRental {
         this.finish = finish;
     }
 
-    public Model2.Vehicle getVehicle() {
+    public Vehicle getVehicle() {
         return vehicle;
     }
 
-    public void setVehicle(Model2.Vehicle vehicle) {
+    public void setVehicle(Vehicle vehicle) {
         this.vehicle = vehicle;
     }
 
-    public Model2.Invoice getInvoice() {
+    public Invoice getInvoice() {
         return invoice;
     }
 
-    public void setInvoice(Model2.Invoice invoice) {
+    public void setInvoice(Invoice invoice) {
         this.invoice = invoice;
     }
 }

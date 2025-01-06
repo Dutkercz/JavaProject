@@ -1,4 +1,7 @@
-package Model2;
+package Model2.Services;
+
+import Model2.Entities.CarRental;
+import Model2.Entities.Invoice;
 
 import java.time.Duration;
 
@@ -15,7 +18,7 @@ public class RentalService {
         this.taxService = taxService;
     }
 
-    public void processInvoice(Model2.CarRental carRental) {
+    public void processInvoice(CarRental carRental) {
 
         double minutes = Duration.between(carRental.getStart(), carRental.getFinish()).toMinutes();
         double hours = minutes / 60.0;
@@ -30,7 +33,7 @@ public class RentalService {
 
         double tax = taxService.tax(basicPayment);
 
-        carRental.setInvoice(new Model2.Invoice(basicPayment, tax));
+        carRental.setInvoice(new Invoice(basicPayment, tax));
     }
 
 
