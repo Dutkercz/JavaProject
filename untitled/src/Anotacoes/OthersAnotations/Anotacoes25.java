@@ -4,7 +4,7 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class Anotacoes025 {
+public class Anotacoes25 {
     public static void main(String[] args) {
 
                                 //File Writer
