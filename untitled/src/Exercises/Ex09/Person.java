@@ -1,4 +1,4 @@
-package Exercises.ex09;
+package Exercises.Ex09;
 
 public abstract class Person {
     protected String name;

@@ -1,4 +1,4 @@
-package Exercises.ex09;
+package Exercises.Ex09;
 
 import java.util.ArrayList;
 import java.util.List;
