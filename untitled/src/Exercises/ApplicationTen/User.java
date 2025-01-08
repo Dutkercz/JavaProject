@@ -8,7 +8,7 @@ import java.util.Set;
 public class User {
     private Integer userNumber;
 
-    private Set<User> userSet = new HashSet<>();
+    private final Set<User> userSet = new HashSet<>();
 
     public User(){
     }
