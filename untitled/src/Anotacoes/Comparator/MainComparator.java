@@ -27,7 +27,7 @@ public class MainComparator {
         // EX
         //vou adicionar mais um produto
 
-        Product p4 = new Product("Geladeira", 3500.00);
+        Product p4 = new Product("Tablet", 3500.00);
 
         productList.add(p4);
 
@@ -48,7 +48,11 @@ public class MainComparator {
         // QUANDO PENSA QUE JA RESUMIU, TEM MAIS!!
         System.out.println("Depois de add novo item e usar a classe anonima");
         productList.sort((o1, o2) -> o1.getName().toUpperCase().compareTo(o2.getName().toUpperCase()));
+
         System.out.println(productList);
+
+        String palavraComT = String.valueOf(productList.stream().filter(x -> x.getName().charAt(0) == 'T' ));
+        System.out.println(palavraComT);
 
     }
 }
