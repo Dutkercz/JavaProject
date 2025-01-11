@@ -21,9 +21,6 @@ public class Main {
                 double price = Double.parseDouble(vect[1]);
                 nameAndPrice.add(new Product(vect[0],price ));
 
-
-
-
                 line = bufferedReader.readLine();
             }
 
